@@ -43,26 +43,25 @@ main {
 }
 
 .hero-wrapper {
+  margin-top: 5rem;
+  display: flow-root;
+}
+
+.hero-wrapper figure {
+  width: 45rem;
+  float: right;
+  margin-right: -1rem;
+  position: relative;
+  z-index: -1;
+  top: -6rem;
+  left: 2rem;
+}
+
+.hero-wrapper img {
   width: 100%;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 45rem 45rem;
 }
 
-.box {
-  width: 100%;
-  color: #111111;
-}
-
-.a {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  grid-column: 1/2;
-  grid-row: 1;
-}
-
-.a span {
+span {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -71,41 +70,35 @@ main {
   color: #FF3998;
 }
 
-.a h1 {
+h1 {
   font-weight: 900;
   font-size: 96px;
   line-height: 116px;
   margin: 0px;
+  color: #111111;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
-.a p {
+p {
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
   color: #555555;
-  margin: 0px;
-}
-
-.b {
-  display: flex;
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.b img {
-  width: 100%;
 }
 
 .gradient-border-bt {
-  grid-column: 1;
-  grid-row: 4/5;
-  height: auto;
+  margin-top: 1rem;
+  width: 188px;
+  height: 76px;
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, #FF3998, #FF3939, #FF8139, #39FFA0) border-box;
   border: 5px solid transparent;
-  width: 25%;
   border-radius: 50px;
   padding: 10px 20px;
+  font-style: normal;
   font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
   color: #111111;
 }
 
