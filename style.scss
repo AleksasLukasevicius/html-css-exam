@@ -7,8 +7,8 @@ $dark-2: #555555;
 $dark-3: #777777;
 $dark-4: #999999;
 $light-1: #FFFFFF;
-$light-1: #EEEEEE;
-$light-1: #CCCCCC;
+$light-2: #EEEEEE;
+$light-3: #CCCCCC;
 $light-green: #EDFFF6;
 $light-orange: #FFF0E8;
 $orange: #FF8139;
@@ -16,6 +16,24 @@ $pink: #FF3998;
 $green: #39FFA0;
 $red: #FF3939;
 $background: white;
+
+$grey-color: grey;
+$White-color: white;
+$black-color: black;
+$backgroundColor: #f8fafc;
+$text-color: #0f172a;
+
+$Transition: 0.3s linear;
+
+/* fonts */
+$bodyFont: "Lato", sans-serif;
+
+/* shadow */
+$shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+$shadow-2: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+$header-height: 12rem;
 
 body {
     font-family: $font;
@@ -162,6 +180,106 @@ section.showcasse {
     width: 1280px;
     height: 642px;
     border: 1px solid black;
+}
+
+/*
+=============== 
+Featured
+===============
+*/
+.section-center {
+    display: flex;
+    width: 100%;
+
+}
+
+.showcase-card {
+    width: 290px;
+    height: 400px;
+    transition: var(--mainTransition);
+    margin-bottom: 4rem;
+    border-radius: 1rem;
+    background-color: $light-3;
+    color: $dark-3;
+}
+
+.img-container {
+    width: 100%;
+}
+
+.showcase-img {
+    width: 100%;
+}
+
+.showcase-footer {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+    padding: 0 1.5rem;
+
+}
+
+.showcase-footer p {
+    margin: 0.3rem 0;
+}
+
+.showcase-footer span {
+    color: $orange;
+}
+
+.showcase-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.showcase-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    text-align: right;
+}
+
+.showcase-footer div :nth-child(1) {
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.showcase-footer div :nth-of-type(2) {
+    color: #39FFA0;
+}
+
+.showcase-footer div :nth-child(2) {
+    font-weight: 500;
+    font-size: 20px;
+    color: $dark-1;
+}
+
+.showcase-footer div :nth-child(3) {
+    font-weight: 400;
+    font-size: 18px;
+    color: $dark-3;
+}
+
+@media screen and (min-width: 768px) {
+    .featured-center {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .tour-card {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .tour-card {
+        flex: 0 0 calc(25% - 1rem);
+    }
 }
 
 article.footer-upsell {

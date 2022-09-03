@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* fonts */
+/* shadow */
 body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -143,6 +145,101 @@ section.showcasse {
   border: 1px solid black;
 }
 
+/*
+=============== 
+Featured
+===============
+*/
+.section-center {
+  display: flex;
+  width: 100%;
+}
+
+.showcase-card {
+  width: 290px;
+  height: 400px;
+  transition: var(--mainTransition);
+  margin-bottom: 4rem;
+  border-radius: 1rem;
+  background-color: #CCCCCC;
+  color: #777777;
+}
+
+.img-container {
+  width: 100%;
+}
+
+.showcase-img {
+  width: 100%;
+}
+
+.showcase-footer {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: auto auto;
+  padding: 0 1.5rem;
+}
+
+.showcase-footer p {
+  margin: 0.3rem 0;
+}
+
+.showcase-footer span {
+  color: #FF8139;
+}
+
+.showcase-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.showcase-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  text-align: right;
+}
+
+.showcase-footer div :nth-child(1) {
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.showcase-footer div :nth-of-type(2) {
+  color: #39FFA0;
+}
+
+.showcase-footer div :nth-child(2) {
+  font-weight: 500;
+  font-size: 20px;
+  color: #111111;
+}
+
+.showcase-footer div :nth-child(3) {
+  font-weight: 400;
+  font-size: 18px;
+  color: #777777;
+}
+
+@media screen and (min-width: 768px) {
+  .featured-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .tour-card {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+@media screen and (min-width: 1170px) {
+  .tour-card {
+    flex: 0 0 calc(25% - 1rem);
+  }
+}
 article.footer-upsell {
   width: 683px;
   height: 630px;
