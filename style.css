@@ -263,6 +263,8 @@ p {
 /*showcase*/
 .showcase-container {
   margin-top: 4rem;
+  width: 100%;
+  overflow-x: auto;
 }
 
 .showcase-container .title-wrapper h3 {
@@ -273,11 +275,12 @@ p {
 }
 
 .showcase-center {
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
   display: flex;
   justify-content: space-between;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  overflow-x: auto;
 }
 
 .showcase-card {
